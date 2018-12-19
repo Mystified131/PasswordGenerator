@@ -6,10 +6,12 @@
 
 <h2>Result</h2>
 
-<br />
+@foreach(var element in Model.RandomPassword)
 
-<p>A random password would be: @Model.RandomPassword</p>
+{
+    <p>@Html.DisplayFor(m => element)</p>
 
-<br />
+
+}
 
 

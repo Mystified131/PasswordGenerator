@@ -6,10 +6,16 @@
 <h2>Index</h2><br />
 
 
-<p>This code generates a random password. It will have 13 characters, with 4 lowercase, 4 numbers and 4 uppercase, and a special character.</p><br />
+<p>This code generates random passwords. Each will have 13 characters, with 4 lowercase, 4 numbers and 4 uppercase, and a special character.</p><br />
 
 <form action='Home/Result' method='POST' align="left">
 
-    <input type="submit" value="Generate Random Password" />
+    <label>
+        Please enter the number of passwords to generate:<br><br>
+        <input name="quant" type="text" value="" />
+    </label>
+    <br />
+
+    <input type="submit" value="Generate Random Passwords" />
 
 </form>

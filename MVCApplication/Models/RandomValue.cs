@@ -42,17 +42,25 @@ namespace MVCApplication.Models
         }
 
 
-        public string RandomPassword()
+        public List<string> RandomPassword(int quant)
         {
-  
-            StringBuilder builder = new StringBuilder();
-            builder.Append(RandomString(4, true));
-            builder.Append(RandomNumber(1000, 9999));
-            builder.Append(RandomString(4, false));
-            builder.Append("!");
-            return builder.ToString();
 
+            List<string> pwords = new List<string>();
+
+            for (int i = 0; i < quant; i++)
+            {
+
+                StringBuilder builder = new StringBuilder();
+                builder.Append(RandomString(4, true));
+                builder.Append(RandomNumber(1000, 9999));
+                builder.Append(RandomString(4, false));
+                builder.Append("!");
+                pwords.Add(builder.ToString());
+            }
+
+            return pwords;
         }
+
         
         }
     }

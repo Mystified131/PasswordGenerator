@@ -9,7 +9,9 @@ namespace MVCApplication.ViewModels
 
     public class ResultViewModel
     {
-        public string RandomPassword { get; set; }
+        [Required]
+        public int quant { get; set; }
+        public List<string> RandomPassword { get; set; }
     }
 }
 

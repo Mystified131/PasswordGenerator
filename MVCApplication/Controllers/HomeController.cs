@@ -34,7 +34,7 @@ namespace MVCApplication.Controllers
 
                 RandomValue qbert = new RandomValue("qbert");
 
-                resultViewModel.RandomPassword = qbert.RandomPassword();
+                resultViewModel.RandomPassword = qbert.RandomPassword(resultViewModel.quant);
 
                 return View(resultViewModel);
             }
