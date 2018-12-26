@@ -18,6 +18,12 @@ namespace MVCApplication.Controllers
             return View();
         }
 
+        public IActionResult Error()
+        {
+
+            return View();
+        }
+
         public IActionResult Result()
         {
             ResultViewModel resultViewModel = new ResultViewModel();
@@ -39,7 +45,7 @@ namespace MVCApplication.Controllers
                 return View(resultViewModel);
             }
 
-            return Redirect("/");
+            return Redirect("/Home/Error");
         }
 
     }
