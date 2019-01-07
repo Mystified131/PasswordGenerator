@@ -28,6 +28,11 @@ namespace MVCApplication.Controllers
         {
             ResultViewModel resultViewModel = new ResultViewModel();
 
+            List<string> emptylist = new List<string>();
+            emptylist.Add(" ");
+
+            resultViewModel.RandomPassword = emptylist;
+
             return View(resultViewModel);
         }
 
